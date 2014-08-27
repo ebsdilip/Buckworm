@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BB843DA19ADEC0A00938269 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB843D919ADEC0A00938269 /* Foundation.framework */; };
+		8BB843DC19ADEC0A00938269 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB843DB19ADEC0A00938269 /* CoreGraphics.framework */; };
+		8BB843DE19ADEC0A00938269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB843DD19ADEC0A00938269 /* UIKit.framework */; };
+		8BB843E419ADEC0B00938269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BB843E219ADEC0B00938269 /* InfoPlist.strings */; };
+		8BB843E619ADEC0B00938269 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB843E519ADEC0B00938269 /* main.m */; };
+		8BB843EA19ADEC0B00938269 /* BWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB843E919ADEC0B00938269 /* BWAppDelegate.m */; };
+		8BB843ED19ADEC0B00938269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB843EB19ADEC0B00938269 /* Main.storyboard */; };
+		8BB843F019ADEC0B00938269 /* BWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB843EF19ADEC0B00938269 /* BWViewController.m */; };
+		8BB843F219ADEC0B00938269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB843F119ADEC0B00938269 /* Images.xcassets */; };
+		8BB843F919ADEC0B00938269 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB843F819ADEC0B00938269 /* XCTest.framework */; };
+		8BB843FA19ADEC0B00938269 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB843D919ADEC0A00938269 /* Foundation.framework */; };
+		8BB843FB19ADEC0B00938269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB843DD19ADEC0A00938269 /* UIKit.framework */; };
+		8BB8440319ADEC0B00938269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8440119ADEC0B00938269 /* InfoPlist.strings */; };
+		8BB8440519ADEC0B00938269 /* BuckwormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8440419ADEC0B00938269 /* BuckwormTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BB843FC19ADEC0B00938269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB843CE19ADEC0A00938269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB843D519ADEC0A00938269;
+			remoteInfo = Buckworm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BB843D619ADEC0A00938269 /* Buckworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buckworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB843D919ADEC0A00938269 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BB843DB19ADEC0A00938269 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BB843DD19ADEC0A00938269 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BB843E119ADEC0A00938269 /* Buckworm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Buckworm-Info.plist"; sourceTree = "<group>"; };
+		8BB843E319ADEC0B00938269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BB843E519ADEC0B00938269 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BB843E719ADEC0B00938269 /* Buckworm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Buckworm-Prefix.pch"; sourceTree = "<group>"; };
+		8BB843E819ADEC0B00938269 /* BWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWAppDelegate.h; sourceTree = "<group>"; };
+		8BB843E919ADEC0B00938269 /* BWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWAppDelegate.m; sourceTree = "<group>"; };
+		8BB843EC19ADEC0B00938269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB843EE19ADEC0B00938269 /* BWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWViewController.h; sourceTree = "<group>"; };
+		8BB843EF19ADEC0B00938269 /* BWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWViewController.m; sourceTree = "<group>"; };
+		8BB843F119ADEC0B00938269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BB843F719ADEC0B00938269 /* BuckwormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuckwormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB843F819ADEC0B00938269 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BB8440019ADEC0B00938269 /* BuckwormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuckwormTests-Info.plist"; sourceTree = "<group>"; };
+		8BB8440219ADEC0B00938269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BB8440419ADEC0B00938269 /* BuckwormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuckwormTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BB843D319ADEC0A00938269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB843DC19ADEC0A00938269 /* CoreGraphics.framework in Frameworks */,
+				8BB843DE19ADEC0A00938269 /* UIKit.framework in Frameworks */,
+				8BB843DA19ADEC0A00938269 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB843F419ADEC0B00938269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB843F919ADEC0B00938269 /* XCTest.framework in Frameworks */,
+				8BB843FB19ADEC0B00938269 /* UIKit.framework in Frameworks */,
+				8BB843FA19ADEC0B00938269 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BB843CD19ADEC0A00938269 = {
+			isa = PBXGroup;
+			children = (
+				8BB843DF19ADEC0A00938269 /* Buckworm */,
+				8BB843FE19ADEC0B00938269 /* BuckwormTests */,
+				8BB843D819ADEC0A00938269 /* Frameworks */,
+				8BB843D719ADEC0A00938269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BB843D719ADEC0A00938269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB843D619ADEC0A00938269 /* Buckworm.app */,
+				8BB843F719ADEC0B00938269 /* BuckwormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB843D819ADEC0A00938269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BB843D919ADEC0A00938269 /* Foundation.framework */,
+				8BB843DB19ADEC0A00938269 /* CoreGraphics.framework */,
+				8BB843DD19ADEC0A00938269 /* UIKit.framework */,
+				8BB843F819ADEC0B00938269 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BB843DF19ADEC0A00938269 /* Buckworm */ = {
+			isa = PBXGroup;
+			children = (
+				8BB843E819ADEC0B00938269 /* BWAppDelegate.h */,
+				8BB843E919ADEC0B00938269 /* BWAppDelegate.m */,
+				8BB843EB19ADEC0B00938269 /* Main.storyboard */,
+				8BB843EE19ADEC0B00938269 /* BWViewController.h */,
+				8BB843EF19ADEC0B00938269 /* BWViewController.m */,
+				8BB843F119ADEC0B00938269 /* Images.xcassets */,
+				8BB843E019ADEC0A00938269 /* Supporting Files */,
+			);
+			path = Buckworm;
+			sourceTree = "<group>";
+		};
+		8BB843E019ADEC0A00938269 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BB843E119ADEC0A00938269 /* Buckworm-Info.plist */,
+				8BB843E219ADEC0B00938269 /* InfoPlist.strings */,
+				8BB843E519ADEC0B00938269 /* main.m */,
+				8BB843E719ADEC0B00938269 /* Buckworm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BB843FE19ADEC0B00938269 /* BuckwormTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8440419ADEC0B00938269 /* BuckwormTests.m */,
+				8BB843FF19ADEC0B00938269 /* Supporting Files */,
+			);
+			path = BuckwormTests;
+			sourceTree = "<group>";
+		};
+		8BB843FF19ADEC0B00938269 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8440019ADEC0B00938269 /* BuckwormTests-Info.plist */,
+				8BB8440119ADEC0B00938269 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB843D519ADEC0A00938269 /* Buckworm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB8440819ADEC0B00938269 /* Build configuration list for PBXNativeTarget "Buckworm" */;
+			buildPhases = (
+				8BB843D219ADEC0A00938269 /* Sources */,
+				8BB843D319ADEC0A00938269 /* Frameworks */,
+				8BB843D419ADEC0A00938269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Buckworm;
+			productName = Buckworm;
+			productReference = 8BB843D619ADEC0A00938269 /* Buckworm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BB843F619ADEC0B00938269 /* BuckwormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB8440B19ADEC0B00938269 /* Build configuration list for PBXNativeTarget "BuckwormTests" */;
+			buildPhases = (
+				8BB843F319ADEC0B00938269 /* Sources */,
+				8BB843F419ADEC0B00938269 /* Frameworks */,
+				8BB843F519ADEC0B00938269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB843FD19ADEC0B00938269 /* PBXTargetDependency */,
+			);
+			name = BuckwormTests;
+			productName = BuckwormTests;
+			productReference = 8BB843F719ADEC0B00938269 /* BuckwormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BB843CE19ADEC0A00938269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Engtelegent;
+				TargetAttributes = {
+					8BB843F619ADEC0B00938269 = {
+						TestTargetID = 8BB843D519ADEC0A00938269;
+					};
+				};
+			};
+			buildConfigurationList = 8BB843D119ADEC0A00938269 /* Build configuration list for PBXProject "Buckworm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BB843CD19ADEC0A00938269;
+			productRefGroup = 8BB843D719ADEC0A00938269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB843D519ADEC0A00938269 /* Buckworm */,
+				8BB843F619ADEC0B00938269 /* BuckwormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BB843D419ADEC0A00938269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB843F219ADEC0B00938269 /* Images.xcassets in Resources */,
+				8BB843E419ADEC0B00938269 /* InfoPlist.strings in Resources */,
+				8BB843ED19ADEC0B00938269 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB843F519ADEC0B00938269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8440319ADEC0B00938269 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB843D219ADEC0A00938269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB843F019ADEC0B00938269 /* BWViewController.m in Sources */,
+				8BB843E619ADEC0B00938269 /* main.m in Sources */,
+				8BB843EA19ADEC0B00938269 /* BWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB843F319ADEC0B00938269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8440519ADEC0B00938269 /* BuckwormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BB843FD19ADEC0B00938269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB843D519ADEC0A00938269 /* Buckworm */;
+			targetProxy = 8BB843FC19ADEC0B00938269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BB843E219ADEC0B00938269 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB843E319ADEC0B00938269 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BB843EB19ADEC0B00938269 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB843EC19ADEC0B00938269 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BB8440119ADEC0B00938269 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB8440219ADEC0B00938269 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BB8440619ADEC0B00938269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BB8440719ADEC0B00938269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BB8440919ADEC0B00938269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Buckworm/Buckworm-Prefix.pch";
+				INFOPLIST_FILE = "Buckworm/Buckworm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BB8440A19ADEC0B00938269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Buckworm/Buckworm-Prefix.pch";
+				INFOPLIST_FILE = "Buckworm/Buckworm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8BB8440C19ADEC0B00938269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Buckworm.app/Buckworm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Buckworm/Buckworm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BuckwormTests/BuckwormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8BB8440D19ADEC0B00938269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Buckworm.app/Buckworm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Buckworm/Buckworm-Prefix.pch";
+				INFOPLIST_FILE = "BuckwormTests/BuckwormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BB843D119ADEC0A00938269 /* Build configuration list for PBXProject "Buckworm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8440619ADEC0B00938269 /* Debug */,
+				8BB8440719ADEC0B00938269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB8440819ADEC0B00938269 /* Build configuration list for PBXNativeTarget "Buckworm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8440919ADEC0B00938269 /* Debug */,
+				8BB8440A19ADEC0B00938269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BB8440B19ADEC0B00938269 /* Build configuration list for PBXNativeTarget "BuckwormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8440C19ADEC0B00938269 /* Debug */,
+				8BB8440D19ADEC0B00938269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BB843CE19ADEC0A00938269 /* Project object */;
+}
