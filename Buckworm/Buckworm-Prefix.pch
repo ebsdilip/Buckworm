@@ -11,6 +11,60 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "BWBaseViewController.h"
+#import "DSActivityView.h"
+#import "NSString+HTML.h"
 #endif
+
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define YOUR_MERCHANT_ID @"YOUR_MERCHANT_ID"
+#define dateFormatStandard @"yyyy-MM-dd HH:mm:ss"
+#define dateFormatToShow @"MM/dd/yyyy"
+
+#define startOfURL @"http://buckworm.com/laravel/index.php"
+
+#define isInDeveloperMode NO
+#define versionNumber @"September 24, 2014 Build 1.0 (1.0) #73"
+
+#define colorGreen [UIColor colorWithRed:129.0/255 green:182.0/255 blue:64.0/255 alpha:1.0]
+#define colorTableBG [UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0]
+
+#define colorOfferTitleBG [UIColor colorWithRed:245.0/255 green:245.0/255 blue:245.0/255 alpha:1.0]
+
+#define colorTheme [UIColor colorWithRed:83.0/255 green:207.0/255 blue:184.0/255 alpha:1.0]
+#define textFieldBGColor [UIColor colorWithRed:72.0/255 green:191.0/255 blue:169.0/255 alpha:1.0]
+#define colorSegment [UIColor colorWithRed:1.0 green:0.5 blue: 0.0 alpha:0.8]
+#define buttonBGColorOrange [UIColor colorWithRed:88.0/255 green:156.0/255 blue:125.0/255 alpha:1.0]
+#define colorLinkButtonBG [UIColor colorWithRed:142.0/255 green:216.0/255 blue:109.0/255 alpha:1.0]
+
+#define colorLightGrayForBG [UIColor colorWithRed:230.0/255 green:230.0/255 blue:230.0/255 alpha:1.0]
+
+//#define shareEmailId1 @"ney@engtelegent.com"
+//#define shareEmailId2 @"ebs.dilip@gmail.com"
+//#define shareEmailId3 @"jduffy@buckworm.com"
+
+#define feedbackEmailId1 @"info@buckworm.com"
+//#define feedbackEmailId2 @"ebs.dilip@gmail.com"
+//#define feedbackEmailId3 @"jduffy@buckworm.com"
+
+#define contactUsEmailId1 @"info@buckworm.com"
+//#define contactUsEmailId2 @"ebs.dilip@gmail.com"
+//#define contactUsEmailId3 @"jduffy@buckworm.com"
+
+#define contactUsPhone @"+17542278922"
+
+#define Digital 5001
+#define Purchase 5002
+#define DirectToCard 5003
+#define Ping Pon 5004
+#define Wishworm 5005
+
+#define tagAvailable 100
+#define tagLinked    200
+#define tagRedeemed  300
+#define tagExpired   400
+

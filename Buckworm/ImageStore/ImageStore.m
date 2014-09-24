@@ -1,0 +1,93 @@
+//
+//  ImageStore.m
+//  Sports
+//
+//  Created by winitmb7 on 31/08/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "ImageStore.h"
+
+
+@implementation ImageStore
+
+
+//- (id) init 
+//{
+//	self = [super init];
+//	return self;
+//}
+
+/** 
+ * Returns Directory path for Appplications Documents
+ * @return path
+ */
+
++ (NSString *) GetDocumentDirectoryPath
+{
+    return NSTemporaryDirectory();
+
+//	NSArray  *paths	= NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//	return [paths objectAtIndex:0];
+}
+
+
+/** 
+ * Returns Existing path for Appplications Documents
+ * @return Bool
+ */
+
++ (BOOL) isImageExistsWithNameInDirctory:(NSString *)strImgName
+{
+	NSString *docuPath = [ImageStore GetDocumentDirectoryPath];
+	NSString *filePath  = [docuPath stringByAppendingPathComponent:[strImgName lastPathComponent]];
+	
+	if ([[NSFileManager defaultManager] fileExistsAtPath:filePath] == YES) 
+		return YES;
+	else
+		return NO;
+}
+
+
+
++ (UIImage *) returnImageWithName:(NSString *)strImgName
+{
+	NSString *docuPath = [ImageStore GetDocumentDirectoryPath];
+	NSString *filePath  = [docuPath stringByAppendingPathComponent:strImgName];
+	
+	UIImage *img = [UIImage imageWithContentsOfFile:filePath];
+	
+	return img;
+}
+
+
++ (void) saveImageWithData:(NSData *)imageData withImageName:(NSString *)imageName
+{
+	NSError *error = nil;
+	
+	NSString *docuPath = [ImageStore GetDocumentDirectoryPath];
+	NSString *filePath  = [docuPath stringByAppendingPathComponent:imageName];
+	
+	if ([[NSFileManager defaultManager] fileExistsAtPath:filePath] == YES) 
+	{
+		if (![[NSFileManager defaultManager] removeItemAtPath:filePath error:&error]) 
+		{
+			
+		}
+	}
+	
+	if ([[NSFileManager defaultManager] fileExistsAtPath:filePath] == NO) 
+	{
+		[[NSFileManager defaultManager] createFileAtPath:filePath
+												contents:imageData
+											  attributes:nil];
+	}
+}
+
+
+//-(void)dealloc {
+//    
+//    [super dealloc];
+//}
+
+@end

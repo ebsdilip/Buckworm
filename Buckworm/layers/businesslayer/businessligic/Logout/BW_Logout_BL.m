@@ -1,0 +1,13 @@
+//
+//  BW_Logout_BL.m
+//  buckworm
+//
+//  Created by TechSunRise on 6/24/14.
+//  Copyright (c) 2014 Engtelegent. All rights reserved.
+//
+
+#import "BW_Logout_BL.h"
+
+@implementation BW_Logout_BL
+
+@end
