@@ -342,7 +342,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(tableView.tag == tagLinked && indexPath.row==0)
-        return 45;
+        return 55;
     else
         return 210;
 }
